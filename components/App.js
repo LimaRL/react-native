@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
-import Style from './Style'
+import { View, ScrollView } from 'react-native'
+import Styles from './Style'
 
 import Todo from './todo/Index'
 
@@ -9,8 +9,10 @@ export default class App extends Component {
   render() {
     
     return (
-      <View style={Style.container}>
-        <Todo />
+      <View style={Styles.container}>
+        <ScrollView contentContainerStyle={Styles.scrollView}>
+          <Todo />
+        </ScrollView>
       </View>
     )
   }

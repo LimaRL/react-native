@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import Style from './Style'
+import Styles from './Style'
 
 import TodoList from './todo-list/Index'
 import TodoAdd from './todo-add/Index'
@@ -35,7 +35,7 @@ export default class Todo extends Component {
     const { todos } = this.state
 
     return (
-      <View style={Style.container}>
+      <View style={Styles.container}>
         <TodoAdd handAddTodo={ this.handAddTodo } />
         <TodoList todoList={ todos } />
       </View>

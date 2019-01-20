@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 import TodoItem from '../todo-item/Index'
 
+import Styles from './Style'
+
 export default class TodoList extends Component {
   
   render() {
@@ -13,8 +15,8 @@ export default class TodoList extends Component {
     })
 
     return (
-      <View>
-        { todosToRender }
+      <View style={Styles.container}>
+          { todosToRender }
       </View>
     )
   }

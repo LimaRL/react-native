@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { View, TextInput, Button, Text } from 'react-native'
 
 import Styles from './Style'
-import Style from './Style';
 
 export default class TodoAdd extends Component {
 
@@ -17,12 +16,10 @@ export default class TodoAdd extends Component {
   onTextInput = (textValue) => this.setState({ textValue })
 
   addTodo = () => {
-    if(this.state.textValue !== ""){
-      this.props.handAddTodo(this.state.textValue)
-      this.setState({
-        textValue: ""
-      })
-    }
+    this.props.handAddTodo(this.state.textValue)
+    this.setState({
+      textValue: ""
+    })
   }
 
   render() {
@@ -30,17 +27,19 @@ export default class TodoAdd extends Component {
     const { textValue } = this.state
 
     return (
-      <View style={ Style.container }>
+      <View style={ Styles.container }>
         <TextInput 
           style={ Styles.input }
           value={ textValue }
           onChangeText={ this.onTextInput } 
         />
-        <Button 
-          style={ Style.button }
-          onPress={ this.addTodo }
-          title="Add" 
-        />
+        <View style={ Styles.btn }>
+          <Button 
+            disabled={ !textValue }
+            onPress={ this.addTodo }
+            title="Add" 
+          />
+        </View>
       </View>
     )
   }
