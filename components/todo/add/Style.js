@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default styles = StyleSheet.create({
+export default style = StyleSheet.create({
     container:{
         alignItems: "center",
         flexDirection: "row",
@@ -17,7 +17,7 @@ export default styles = StyleSheet.create({
 
         borderColor: '#f2f2f2', 
         borderWidth: 1,
-        borderRadius: 5,
+        borderRadius: 3,
         
         backgroundColor: "#fff",
     },

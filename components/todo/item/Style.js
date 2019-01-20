@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default styles = StyleSheet.create({
+export default style = StyleSheet.create({
     container:{
         height: 40,
         alignItems: "center",
@@ -19,7 +19,7 @@ export default styles = StyleSheet.create({
         shadowRadius: 5,
         shadowOpacity: 1.0,
 
-        elevation: 5.5,
+        elevation: 15,
     },
     item: {
         color: "#fff",

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
-import Styles from './Style'
+import Style from './Style'
 
 export default class TodoItem extends Component {
   render() {
@@ -8,8 +8,8 @@ export default class TodoItem extends Component {
     const { text } = this.props
 
     return (
-      <View style={Styles.container}>
-        <Text style={Styles.item}>{ text }</Text>
+      <View style={Style.container}>
+        <Text style={Style.item}>{ text }</Text>
       </View>
     )
   }

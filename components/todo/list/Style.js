@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default styles = StyleSheet.create({
+export default style = StyleSheet.create({
     container:{
         padding: 15,
         flexDirection: "column-reverse"

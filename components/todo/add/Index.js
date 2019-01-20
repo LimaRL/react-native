@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, TextInput, Button, Text } from 'react-native'
 
-import Styles from './Style'
+import Style from './Style'
 
 export default class TodoAdd extends Component {
 
@@ -27,13 +27,13 @@ export default class TodoAdd extends Component {
     const { textValue } = this.state
 
     return (
-      <View style={ Styles.container }>
+      <View style={ Style.container }>
         <TextInput 
-          style={ Styles.input }
+          style={ Style.input }
           value={ textValue }
           onChangeText={ this.onTextInput } 
         />
-        <View style={ Styles.btn }>
+        <View style={ Style.btn }>
           <Button 
             disabled={ !textValue }
             onPress={ this.addTodo }

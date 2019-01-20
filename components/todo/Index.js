@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import Styles from './Style'
+import Style from './Style'
 
-import TodoList from './todo-list/Index'
-import TodoAdd from './todo-add/Index'
+import TodoList from './list/Index'
+import TodoAdd from './add/Index'
 
 const todosList = [
     { text: "Todo 1" },
@@ -35,7 +35,7 @@ export default class Todo extends Component {
     const { todos } = this.state
 
     return (
-      <View style={Styles.container}>
+      <View style={Style.container}>
         <TodoAdd handAddTodo={ this.handAddTodo } />
         <TodoList todoList={ todos } />
       </View>
