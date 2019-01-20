@@ -8,9 +8,15 @@ export default class TodoList extends Component {
   
   render() {
 
+    const { navigation } = this.props
+
     const todosToRender = this.props.todoList.map(( todo ) => {
       return(
-        <TodoItem text={todo.text} />
+        <TodoItem 
+          key={`todo-id-${todo.id}`}
+          todo={ todo }
+          navigation={ navigation }
+        />
       )
     })
 

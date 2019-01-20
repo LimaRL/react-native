@@ -3,9 +3,14 @@ import { Text, View } from 'react-native'
 
 export class TodoDetails extends Component {
   render() {
+
+    const { details, location } = this.props
+
     return (
       <View>
-        <Text> Details </Text>
+        <Text>{ details }</Text>
+        <Text>
+          Created: { location }</Text>
       </View>
     )
   }
